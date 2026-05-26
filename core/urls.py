@@ -2,7 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    # Dashboard
+    # Dashboard (Homepage)
     path('', views.dashboard, name='dashboard'),
     
     # Water Delivery
