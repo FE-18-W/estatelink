@@ -1,13 +1,7 @@
-"""
-URL configuration for config project.
-"""
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include  # <-- The 'include' function MUST be imported
 
 urlpatterns = [
-    # Admin panel
     path('admin/', admin.site.urls),
-    
-    # All core app URLs (this handles /, /water/, /fundi/, etc.)
-    path('', include('core.urls')),
+    path('', include('core.urls')),  # <-- This line MUST be present
 ]
